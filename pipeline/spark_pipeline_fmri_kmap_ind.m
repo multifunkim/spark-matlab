@@ -162,7 +162,7 @@ for num_e = 1:length(fmri)
         mkdir(job_opt.folder_out);
     end
     job_opt.str          = pipeline.(['single_kmap_' label(num_e).name]).files_out;
-    job_out.kmaps = [job_opt.folder_out 'kmap_' label(num_e).name '.mnc.gz'];
+    job_out.kmaps = [job_opt.folder_out 'kmap_' label(num_e).name ext_f];
     job_out.kmap_all_mat = [job_opt.folder_out 'kmap_all_' label(num_e).name '.mat'];
     job_out.atoms_all_mat = [job_opt.folder_out 'atoms_all_' label(num_e).name '.mat'];
     pipeline = psom_add_job(pipeline,['nkmap_' label(num_e).name],'spark_run_fmri_kmap',job_in,job_out,job_opt);

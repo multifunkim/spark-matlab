@@ -59,6 +59,29 @@ end
 
 %% Run the pipeline
 if ~opt.flag_test
+	% The fileds 'dir' and 'data' below may cause errors 
+	% because they are considered as non existant inputs to the jobs.
+	% Temporary solution: create the non-existant input directories.
+	% Permanent solution: do not put those fields because they are not useful, use fileparts.
+	jobNames = fieldnames(pipeline);
+
+	jobFilter = 'kmdl_boot';
+	validJobs = jobNames(strncmp(jobNames, jobFilter, numel(jobFilter)));
+	for k = 1:numel(validJobs)
+		if isfield(pipeline.(validJobs{k}).files_in, 'dir')
+			private_mkdir(pipeline.(validJobs{k}).files_in.dir);
+		end
+	end
+
+	jobFilter = 'kmdl_Gx_';
+	validJobs = jobNames(strncmp(jobNames, jobFilter, numel(jobFilter)));
+	for k = 1:numel(validJobs)
+		if isfield(pipeline.(validJobs{k}).files_in, 'data')
+			private_mkdir(pipeline.(validJobs{k}).files_in.data);
+		end
+	end
+	clear jobNames jobFilter validJobs
+
     psom_run_pipeline(pipeline,opt.psom);
 end
 

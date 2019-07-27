@@ -33,12 +33,12 @@ GX=gi';
 
 
 %% Save output results
-save(files_out, 'Con_X','param','GX','-v7.3');
+save(files_out, 'Con_X','param','GX');
 
 
 
 %% Delete intermediate files
-for num_b = 1:opt.nb_samps
+for num_b = 2:opt.nb_samps
     
     delete([opt.clean 'tseries_boot' num2str(num_b) '_' opt.label.name '.mat']);
     delete([files_in.data 'kmdl_boot' num2str(num_b) '_' opt.label.name '.mat']);

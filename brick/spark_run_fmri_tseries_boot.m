@@ -23,7 +23,7 @@ for num_s = 1:opt.nb_samps
         tseries_boot= niak_bootstrap_tseries(tseries,opt.bootstrap);
     end 
     % Save resampled data
-    save([opt.folder_out 'tseries_boot' num2str(num_s) '_' opt.label.name], 'tseries_boot','-v7.3');
+    save([opt.folder_out 'tseries_boot' num2str(num_s) '_' opt.label.name '.mat'], 'tseries_boot');
     
 end
 

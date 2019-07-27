@@ -22,7 +22,7 @@ param=opt.ksvd.param;
 param.InitializationMethod ='GivenMatrix';
 tmp = tseries;
 tmp(:,all(tmp==0,1))=[];
-param.numIteration = 15;
+param.numIteration = 10;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Network Scale estimation using sparse GLM (Lee et al, 2011, IEEE TMI)
@@ -74,4 +74,4 @@ fprintf(['Sparsty level has been initialized to ' num2str(param.initk) '... \n']
 clear initDic initout mdl sp_level net_level
 param.numIteration   = opt.ksvd.param.numIteration;
 %% Save intermediate results
-save([opt.folder_out 'single_kmap_' opt.label.name],'-v7.3');
+save([opt.folder_out 'single_kmap_' opt.label.name '.mat']);
