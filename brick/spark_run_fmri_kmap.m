@@ -41,7 +41,6 @@ vol_mask = round(vol_mask);
 k_map = niak_tseries2vol(opt_k,vol_mask);
 
 [path_f,name_f,ext_f] = niak_fileparts(files_out.kmaps); clear path_f name_f
-clear hdr
 hdr.type = ext_f
 hdr.file_name = files_out.kmaps;
 niak_write_vol(hdr,k_map);
