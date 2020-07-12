@@ -4,7 +4,9 @@
 
 ------------
 
-SPARK has been built upon Neuroimaging Analysis Kit ([NIAK](https://github.com/SIMEXP/niak)), which is a public library of modules and pipelines for fMRI processing with Octave or Matlab(r) that can run in parallel either locally or in a supercomputing environment.
+SPARK has been built upon Neuroimaging Analysis Kit ([NIAK](https://github.com/SIMEXP/niak)), which is a public library of modules and pipelines for fMRI processing with Octave or Matlab(r) that can run in parallel either locally or in a supercomputing environment. Matlab codes of SPARK were developed and written by Kangjoo Lee (kangjoo.lee@mail.mcgill.ca). 
+
+SPARK is currently available on Github: https://github.com/multifunkim/spark-matlab (matlab version), https://github.com/multifunkim/spark-hpc (hpc version). Ali Obai (ali.obai.b.k@gmail.com), a PhD student in Grova Lab mainly contributed to the public release of SPARK. We are also working on including SPARK within CBRAIN platform (also available on https://github.com/multifunkim/spark-cbrain).
 
 ------------
 
