@@ -1,5 +1,10 @@
 function [files_in, files_out,opt] = spark_run_fmri_tseries_boot(files_in,files_out, opt)
 
+%% Step 1) This function loads 3D+t fMRI volume and extracts gray matter voxels defined by a binary mask.
+%% Input files: a 3D+t fMRI file and a 3D mask file. Two files should have a same 3D dimension in space.
+%% Step 2) Circular block bootstrap is applied to generate surrogates of the original fMRI time-courses. 
+%% For a pre-defined number of surrogates B, the number of generated surrogates is B-1, to include the original fMRI data.
+
 if opt.flag_test == 1
     return
 end
