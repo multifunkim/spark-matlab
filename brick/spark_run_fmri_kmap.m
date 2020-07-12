@@ -1,5 +1,8 @@
 function [files_in,files_out,opt] = spark_run_fmri_kmap(files_in,files_out,opt)
 
+%% This function takes input from the output of spark_run_fmri_Gx_clustering.m.
+%% Output files: a k-hubness map (.mnc file), and a set of atom maps (.mnc file)
+
 %% If the test flag is true, stop here !
 if opt.flag_test == 1
     return
