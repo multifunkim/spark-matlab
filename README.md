@@ -8,11 +8,10 @@ SPARK proposes a novel measure of hubness, "k-hubness", by counting the number o
 
 * Step 1: A large number of bootstrap surrogates (e.g. B=200 resampled datasets with equal dimensions as the original fMRI data; time-by-voxel) are generated using the Circular Block Bootstrap (Bellec et al., 2010).
 * Step 2: Sparse dictionary learning (e.g. a modified K-SVD) is applied for each surrogate in parallel. The outputs of B processes involve B sets of a data-driven dictionary (temporal characteristics of networks) and the corresponding sparse coefficient matrix (spatial maps of networks). 
-* Step 3: The spatial maps are then collected and clustered to find the most reproducible patterns of networks across the resampled datasets. 
-* Step 4: The maps are averaged in each cluster. 
-* Step 5: Denoising: statistical reproducibility across B bootstrap resamples
+* Step 3: The spatial maps are collected and clustered to find the most reproducible patterns of networks across the resampled datasets. The maps are then averaged in each cluster. 
+* Step 4: Denoising: statistical reproducibility across B bootstrap resamples
+* Step 5 (Optional): Denoising of physiological artifect atoms by visual inspections.
 * Step 6: Computation of k-hubness for each voxel.
-* Step 7 (Optional): Denoising of physiological artifect atoms by visual inspection and re-computation of k-hubness.
 
 ------------
 
