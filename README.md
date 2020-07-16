@@ -14,7 +14,7 @@ SPARK provides a set of individually consistent resting state networks, and prop
 ------------
 # Requirements
 
-SPARK has been built upon Neuroimaging Analysis Kit ([NIAK](https://github.com/SIMEXP/niak)), which is a public library of modules and pipelines for fMRI processing with Octave or Matlab(r) that can run in parallel either locally or in a supercomputing environment. Matlab codes of SPARK were developed and written by Kangjoo Lee (kangjoo.lee@mail.mcgill.ca). 
+SPARK has been built upon Neuroimaging Analysis Kit ([NIAK](https://github.com/SIMEXP/niak)), which is a public library of modules and pipelines for fMRI processing with Octave or Matlab(r) that can run in parallel either locally or in a supercomputing environment.  
 
 # Other versions
 
