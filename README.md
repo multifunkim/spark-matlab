@@ -11,7 +11,7 @@ SPARK provides a set of individually consistent resting state networks, and prop
 * Step 5 (Optional): Denoising of physiological artifect atoms by visual inspections.
 * Step 6: Computation of k-hubness for each voxel.
 
-* K-SVD algorithm was developed by Aharon et al. (IEEE TSP, 2006) and modified in this work. The original K-SVD matlab codes can be found in http://www.cs.technion.ac.il/~ronrubin/software.html.
+K-SVD algorithm was developed by Aharon et al. (IEEE TSP, 2006) and modified in this work. The original K-SVD matlab codes can be found in http://www.cs.technion.ac.il/~ronrubin/software.html.
 
 ------------
 # Requirements
