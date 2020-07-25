@@ -4,12 +4,14 @@
 
 SPARK provides a set of individually consistent resting state networks, and proposes a novel measure of hubness, "k-hubness", by counting the number of functional networks spatiaotemporally overlapping in each voxel. This method is fully data-driven, voxel-wise multivariate analysis of BOLD fMRI data based on the [data driven sparse GLM](http://ieeexplore.ieee.org/document/5659483). Parameters of our sparse dictionary learning process are automatically estimated. Statistical reproducibility of the hub estimation is ensured using a bootstrap resampling based strategy, as follows.
 
-* Step 1: A large number of bootstrap surrogates (e.g. B=200 resampled datasets with equal dimensions as the original fMRI data; time-by-voxel) are generated using the Circular Block Bootstrap (Bellec et al., 2010).
+* Step 1: A large number of bootstrap surrogates (e.g. B=200 resampled datasets with equal dimensions as the original fMRI data; time-by-voxel) are generated using the Circular Block Bootstrap (Bellec et al., Neuroimage, 2010).
 * Step 2: Sparse dictionary learning (e.g. a modified K-SVD) is applied for each surrogate in parallel. The outputs of B processes involve B sets of a data-driven dictionary (temporal characteristics of networks) and the corresponding sparse coefficient matrix (spatial maps of networks). 
 * Step 3: The spatial maps are collected and clustered to find the most reproducible patterns of networks across the resampled datasets. The maps are then averaged in each cluster. 
 * Step 4: Denoising: statistical reproducibility across B bootstrap resamples
 * Step 5 (Optional): Denoising of physiological artifect atoms by visual inspections.
 * Step 6: Computation of k-hubness for each voxel.
+
+* K-SVD algorithm was developed by Aharon et al. (IEEE TSP, 2006) and modified in this work. The original K-SVD matlab codes can be found in http://www.cs.technion.ac.il/~ronrubin/software.html.
 
 ------------
 # Requirements
