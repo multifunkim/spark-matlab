@@ -31,8 +31,10 @@ SPARK is currently available on GitHub:
 
 If you use this library for your publications, please cite it as:
 
-Kangjoo Lee, Jean-Marc Lina, Jean Gotman and Christophe Grova, “SPARK: Sparsity-based analysis of reliable k-hubness and overlapping network structure in brain functional connectivity”, Neuroimage, vol. 134, pp. 434–449, April 2016
+Kangjoo Lee, Jean-Marc Lina, Jean Gotman and Christophe Grova, “SPARK: Sparsity-based analysis of reliable k-hubness and overlapping network structure in brain functional connectivity”, Neuroimage, vol. 134, pp. 434–449, April 2016, [Link](https://doi.org/10.1016/j.neuroimage.2016.03.049).
 
 Additional reference:
 
-Kangjoo Lee, Hui Ming Khoo, Jean-Marc Lina, François Dubeau, Jean Gotman and Christophe Grova, “Disruption, emergence and lateralization of brain network hubs in mesial temporal lobe epilepsy”, Neuroimage: Clinical, vol. 20, pp. 71–84, June 2018
+Kangjoo Lee, Hui Ming Khoo, Jean-Marc Lina, François Dubeau, Jean Gotman and Christophe Grova, “Disruption, emergence and lateralization of brain network hubs in mesial temporal lobe epilepsy”, Neuroimage: Clinical, vol. 20, pp. 71–84, June 2018, [Link](https://doi.org/10.1016/j.nicl.2018.06.029).
+
+Kangjoo Lee, Corey Horien, David O’Connor, Bronwen Garand-Sheridan, Fuyuze Tokoglu, Dustin Scheinost, Evelyn M.R. Lake, R. Todd Constable, “Arousal impacts distributed hubs modulating the integration of brain functional connectivity”, Neuroimage (2022), [Link](https://doi.org/10.1016/j.neuroimage.2022.119364).
